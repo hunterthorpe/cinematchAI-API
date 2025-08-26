@@ -17,7 +17,9 @@ exports.handler = async (event) => {
     }
 
     const movieList = movies.map(m => `"${m}"`).join(', ');
-    let prompt = `You are a movie recommendation expert. Based on this list: [${movieList}], suggest 5 movies.`;
+    let prompt = `You are a movie recommendation expert. Based on this list: [${movieList}], 
+        suggest 5 other movies that a group of people who like these movies would enjoy watching together. 
+        The suggestions should be a good mix and logical follow-ups. The first movie in the list should be your best recommendation.`;
 
     if (exclude.length > 0) {
       prompt += ` Do not suggest: [${exclude.map(e => `"${e}"`).join(', ')}].`;
