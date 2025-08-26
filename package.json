@@ -1,0 +1,24 @@
+{
+  "name": "cinematchai-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "details.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunterthorpe/cinematchAI-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hunterthorpe/cinematchAI-API/issues"
+  },
+  "homepage": "https://github.com/hunterthorpe/cinematchAI-API#readme",
+  "dependencies": {
+    "@google/genai": "^1.15.0",
+    "node-fetch": "^2.7.0"
+  }
+}
